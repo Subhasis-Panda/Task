@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="onload()">
+    <div class="container">
+        <form action="">
+            <label for="">Card Number <span id="star">*</span> </label>
+            <input id="card-field1" type="text" maxlength="4" size="5" placeholder="XXXX" onkeyup="verify_card_1(this,'card-field2')" autocomplete="off" />
+            <input id="card-field2" type="text" maxlength="4" size="5" placeholder="XXXX" onkeyup="verify_card_1(this,'card-field3')" autocomplete="off" />
+            <input id="card-field3" type="text" maxlength="4" size="5" placeholder="XXXX" onkeyup="verify_card_1(this,'card-field4')" autocomplete="off" />
+            <input id="card-field4" type="text" maxlength="4" size="5" placeholder="XXXX" onkeyup="verify_card_1(this,'card-field4')" autocomplete="off" />
+            <br>
+    
+            <input type="button" name="submit" id="submit" value="submit" onclick="showDeatils()">
+        </form>
+    
+        <div id="display_list">
+            <ul >
+                <li id="list_Data"></li>
+                <span> 
+                    <input type="button" value="delete" name="delete" class="delete">
+                </span>
+            </ul>
+        </div>
+    </div>
+    
+        <script src="app.js"></script>
+    
+</body>
+</html>
